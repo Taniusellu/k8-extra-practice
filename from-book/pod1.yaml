@@ -1,0 +1,9 @@
+NAME          READY   STATUS    RESTARTS   AGE
+kubia-6kpkd   1/1     Running   0          5m27
+
+
+#I created the pod with the next command 
+kubectl run kubia --image=luksa/kubia --port=8080 --generator=run-pod/v1
+
+#next command will send   the output to your file
+kubectl get pods > pod1.yaml(nameOfYourFile)
